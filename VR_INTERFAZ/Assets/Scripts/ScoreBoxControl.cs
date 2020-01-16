@@ -24,7 +24,7 @@ public class ScoreBoxControl : MonoBehaviour
         if (!isVisible)
         {
             storePosition = cameraPos.position + cameraPos.forward * distance;
-            storePosition.y = Mathf.Clamp(storePosition.y, 0.1f, 50f);
+            storePosition.y = Mathf.Clamp(storePosition.y + 0.7f, 0.1f, 50f);
         }
 
         MoveToPosition();
