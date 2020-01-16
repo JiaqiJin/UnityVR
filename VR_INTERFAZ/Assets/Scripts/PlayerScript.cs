@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerScript : MonoBehaviour
@@ -42,13 +43,18 @@ public class PlayerScript : MonoBehaviour
         healtText.text = health.ToString();
         scoreText.text = score.ToString();
         pointsText.text = point.ToString();
+
         if(score >= 12 && point > 8)
         {
             dis.GetComponent<DisableTeleport>().Disabletele(true);
-            dis.GetComponent<DisableTeleport>().PortalActive(true);
+            //dis.GetComponent<DisableTeleport>().PortalActive(true);
            
         }
 
+        if(health < 0)
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -68,7 +74,7 @@ public class PlayerScript : MonoBehaviour
         {           
             dis.GetComponent<DisableTeleport>().Disabletele(false);
             control = true;
-            Debug.Log(control);
+            //Debug.Log(control);
             //dis.GetComponent<DisableTeleport>().MommyActive(true);
         }
     }

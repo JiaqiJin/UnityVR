@@ -5,15 +5,16 @@ using UnityEngine;
 public class DisableTeleport : MonoBehaviour
 {
     public GameObject[] teleports;
-    public GameObject mommy;
-    public GameObject portal;
+    //public GameObject mommy;
+
+    public GameObject MagicDoor;
     public PlayerScript player;
     // Start is called before the first frame update
     void Start()
     {
         Disabletele(true);
         //mommy.SetActive(false);
-        portal.SetActive(true);
+        MagicDoor.SetActive(true);
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class DisableTeleport : MonoBehaviour
 
     public void PortalActive(bool input)
     {
-        portal.SetActive(input);
+        MagicDoor.SetActive(input);
     }
 
 }

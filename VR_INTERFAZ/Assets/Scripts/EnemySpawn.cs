@@ -66,6 +66,27 @@ public class EnemySpawn : MonoBehaviour
         if (other.tag == "Player")
         {
             Destroy(gameObject);
+            GameObject mommy = Instantiate(Resources.Load("Mommy", typeof(GameObject))) as GameObject;
+
+            //set the coordinates for a new vector 3
+            float randomX = UnityEngine.Random.Range(-10f, 10f);
+            float constantY = .01f;
+            float randomZ = UnityEngine.Random.Range(-10f, 10f);
+            //set the mami position equal to these new coordinates
+            mommy.transform.position = new Vector3(randomX + (spawnpoint.position.x - 3.0f), constantY, randomZ + (spawnpoint.position.z - 3.0f));
+
+            //si la mami se posiciona a menos o igual a 3 unidades de escena de la cámara, no podremos dispararle
+            //así que sigue reubicando a la mamá hasta que esté a más de 3 unidades de escena.
+            while (Vector3.Distance(mommy.transform.position, Camera.main.transform.position) <= 3)
+            {
+
+                randomX = UnityEngine.Random.Range(-10f, 10f);
+                randomZ = UnityEngine.Random.Range(-10f, 10f);
+
+                mommy.transform.position = new Vector3(randomX + (target.position.x - 3.0f), constantY, randomZ + (target.position.z - 3.0f));
+
+            }
+
         }
         else if (other.tag == "FireBall")
         {

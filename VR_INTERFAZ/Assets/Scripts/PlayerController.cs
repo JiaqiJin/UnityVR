@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         //destroy the bullet after 1 second
         Destroy(bullet, 1);
         //wait for 1 second and set isShooting to false so we can shoot again
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.3f);
         isShooting = false;
     }
 

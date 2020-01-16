@@ -197,9 +197,11 @@
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\RotateCube.cs" />
     <Compile Include="Assets\Scripts\SceneControl.cs" />
+    <Compile Include="Assets\Scripts\ScoreBoxControl.cs" />
     <Compile Include="Assets\Scripts\Teleport\Teleport.cs" />
     <Compile Include="Assets\Scripts\Teleport\VRTeleport.cs" />
     <Compile Include="Assets\Scripts\Test\TestTrigger.cs" />
+    <Compile Include="Assets\Scripts\UnityExtension.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrController.shader" />
