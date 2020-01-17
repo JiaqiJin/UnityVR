@@ -219,15 +219,6 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlay.shader" />
     <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
     <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/proyectoUnity/Interfaz/VR_Proyecto_Grupo7/VR_INTERFAZ/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/proyectoUnity/Interfaz/VR_Proyecto_Grupo7/VR_INTERFAZ/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/proyectoUnity/Interfaz/VR_Proyecto_Grupo7/VR_INTERFAZ/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>E:/proyectoUnity/Interfaz/VR_Proyecto_Grupo7/VR_INTERFAZ/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
