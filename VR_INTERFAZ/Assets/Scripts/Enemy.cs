@@ -55,7 +55,11 @@ public class Enemy : MonoBehaviour
     {
         //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Player")
+        {
             Destroy(gameObject);
+            player_.HealthLess();
+        }
+          
         //resta vida al jugador
         //playerController.GetComponent<PlayerController>().health -= 10;
     }
@@ -65,8 +69,9 @@ public class Enemy : MonoBehaviour
         if (other.tag == "Player" )
         {
             Destroy(gameObject);
-
+            player_.HealthLess();
         }
+
         else if( other.tag == "FireBall")
         {
             health -= 40;

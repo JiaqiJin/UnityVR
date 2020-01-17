@@ -12,7 +12,7 @@ public class DisableTeleport : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Disabletele(true);
+        EnablePortal(true);
         //mommy.SetActive(false);
         MagicDoor.SetActive(true);
     }
@@ -23,7 +23,7 @@ public class DisableTeleport : MonoBehaviour
         //mommy.SetActive(player.control);
     }
 
-    public void Disabletele(bool input)
+    public void EnablePortal(bool input)
     {
         foreach (GameObject tel in teleports)
         {

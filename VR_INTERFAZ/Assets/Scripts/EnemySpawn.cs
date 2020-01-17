@@ -55,7 +55,11 @@ public class EnemySpawn : MonoBehaviour
     {
         //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Player")
+        {
+            player_.HealthLess();
             Destroy(gameObject);
+        }
+           
         
         //resta vida al jugador
         //playerController.GetComponent<PlayerController>().health -= 10;
@@ -65,6 +69,7 @@ public class EnemySpawn : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            player_.HealthLess();
             Destroy(gameObject);
             GameObject mommy = Instantiate(Resources.Load("Mommy", typeof(GameObject))) as GameObject;
 

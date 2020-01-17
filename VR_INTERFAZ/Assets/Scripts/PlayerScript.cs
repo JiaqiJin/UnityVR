@@ -27,6 +27,11 @@ public class PlayerScript : MonoBehaviour
         score++;
     }
 
+    public void HealthLess()
+    {
+        health -= 10;
+    }
+
     public DisableTeleport dis;
 
     private void Start()
@@ -43,15 +48,15 @@ public class PlayerScript : MonoBehaviour
         healtText.text = health.ToString();
         scoreText.text = score.ToString();
         pointsText.text = point.ToString();
-
-        if(score >= 12 && point > 8)
+        //12 && point > 8
+        if (score >= 12 && point > 8)
         {
-            dis.GetComponent<DisableTeleport>().Disabletele(true);
+            dis.GetComponent<DisableTeleport>().EnablePortal(true);
             //dis.GetComponent<DisableTeleport>().PortalActive(true);
            
         }
 
-        if(health < 0)
+        if(health <= 0)
         {
             SceneManager.LoadScene("Win");
         }
@@ -72,7 +77,7 @@ public class PlayerScript : MonoBehaviour
 
         else if(other.tag == "Fight")
         {           
-            dis.GetComponent<DisableTeleport>().Disabletele(false);
+            dis.GetComponent<DisableTeleport>().EnablePortal(false);
             control = true;
             //Debug.Log(control);
             //dis.GetComponent<DisableTeleport>().MommyActive(true);
