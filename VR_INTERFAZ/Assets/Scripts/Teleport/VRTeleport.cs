@@ -28,7 +28,7 @@ public class VRTeleport : MonoBehaviour
         {
             gvrTimer += Time.deltaTime;
             imageCircle.fillAmount = gvrTimer / totalTime;
-        }
+        } 
 
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0f));
 
