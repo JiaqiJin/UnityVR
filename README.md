@@ -50,6 +50,14 @@ Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del j
 
 ## Gif animado de ejecución
 
+- Inicio : 
+![sponza](https://github.com/samjxxxx/UnityVR/blob/master/Gift/first.gif)
+
+- Gameplay : 
+![sponza](https://github.com/samjxxxx/UnityVR/blob/master/Gift/second.gif)
+
+- Win : 
+![sponza](https://github.com/samjxxxx/UnityVR/blob/master/Gift/3.gif)
 
 ## Acta de los acuerdos del grupo respecto al trabajo en equipo
 Daniel Labena : Sistema de movimiento del personaje y disparo del personaje.
