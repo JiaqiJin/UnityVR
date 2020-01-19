@@ -2,6 +2,10 @@
 
 ## Cuestiones importantes para el uso
 
+- Solo para el sistema Android.
+
+- Descarga el juego -> VR_INTERFAZ -> VR_Game.apk(download).
+
 Con la introducción de dispositivos Google Cardboard, están surgiendo experiencias inmersivas de realidad virtual para su uso generalizado.Estas experiencias se caracterizan por el sentido de presencia que crean, colocando a los usuraios en un entornos imaginarios, históricos, representativos e imposibles.
 
 Las experiencias basadas en VR de este juego se centra en una interacción continue entre el jugador y el entorno en el que se situa.El juego utiliza el SDK CardBoard, que est diseñado para poder jugar con el movil de Android o Apple.
@@ -38,7 +42,7 @@ Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del j
 - Entorno de UI y sus principlaes usos.
 - Uso de la cámara y como añadir una extension.
 
-##Aspectos que destacarías en la aplicación.
+## Aspectos que destacarías en la aplicación.
 - Incorporsción de inteligencia artificial.
 - Movimientos del personaje.
 - Detección de diferentes tipos de trigger.
@@ -54,6 +58,6 @@ Daniel Gonzalez Marrero : Realizar IA del juego.
 
 Jiaqi Jin: Extension para la cámara y diferentes tipos de sensores del jugador.
 
-Trabajo Grupal: Entorno del juego y planteaminto del jugabilidad.
+Trabajo Grupal: Entorno del juego y planteaminto de la jugabilidad DEL JUEGO.
 
  
