@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
+    public int maxHealth;
+    public int pointsObjetive;
+    public int scoreObjetive;
     public int point; // varibale para alamcenar monedas
     public int health;
     public int score;
@@ -36,29 +39,32 @@ public class PlayerScript : MonoBehaviour
 
     private void Start()
     {
-        health = 100;
+        scoreObjetive = 12;
+        pointsObjetive = 8;
+        maxHealth = 100;
+
+        health = maxHealth;
         healtText.text = health.ToString();
-        scoreText.text = score.ToString();
-        pointsText.text = point.ToString();
+        scoreText.text = score.ToString() + "/" + scoreObjetive;
+        pointsText.text = point.ToString() + "/" + pointsObjetive;
     }
 
     private void Update()
     {
         control = false;
         healtText.text = health.ToString();
-        scoreText.text = score.ToString();
-        pointsText.text = point.ToString();
+        scoreText.text = score.ToString() + "/" + scoreObjetive;
+        pointsText.text = point.ToString() + "/" + pointsObjetive;
         //12 && point > 8
-        if (score >= 12 && point > 8)
+        if (score >= scoreObjetive && point >= pointsObjetive)
         {
             dis.GetComponent<DisableTeleport>().EnablePortal(true);
-            //dis.GetComponent<DisableTeleport>().PortalActive(true);
            
         }
 
         if(health <= 0)
         {
-            SceneManager.LoadScene("Win");
+            SceneManager.LoadScene("Lose");
         }
     }
 

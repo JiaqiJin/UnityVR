@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-E:/proyectoUnity/Interfaz/VR_Proyecto_Grupo7/VR_INTERFAZ/VR_Game.apk
+C:/Users/folla/Documents/GitHub/UnityVR/VR_INTERFAZ/VR_Game.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/SampleScene.unity
@@ -64,8 +64,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 3bb1b4bae6823a4524e793cdb8702970 Assembly-CSharp.dll:GoogleVR.PermissionsDemo.PermissionsFlowManager
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 507174d46dacbc5fe45e28485db5dd1e UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -100,7 +98,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 5d46189bfca968b9b26fd60c37765c3f Assembly-CSharp.dll:.GvrArmModel
 ccdd7eefda6e28e9d65f182f8a224f35 Assembly-CSharp.dll:.DisableTeleport
-86df5b2226e27717d5bd55233b731842 Assembly-CSharp.dll:GoogleVR.Demos.DemoInputManager
+ff7d3100dcac4699fa2b5abb996d38b1 Assembly-CSharp.dll:GoogleVR.Demos.DemoInputManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GvrEditorEmulator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -149,7 +147,7 @@ df14204c8eef5efd8b1a9daa6e0a5862 Assembly-CSharp.dll:.GvrAllEventsTrigger
 10e5e5a6a80d1d5521d8e42ecdcff303 Assembly-CSharp.dll:GoogleVR.Beta.Demos.DemoSeeThroughController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 f694021fab526c14fbd3efebc16d5eba Assembly-CSharp.dll:.GvrTrackedController
-94b9bca75fc932e47ffb9dcdec5ca6c0 Assembly-CSharp.dll:.GvrLaserPointer
+1f8286dbbba9b39b9120dec32b8944e4 Assembly-CSharp.dll:.GvrLaserPointer
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlayerController
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -169,7 +167,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 53ce9a4d3b026469b394261470c07be7 Assembly-CSharp.dll:Gvr.Internal.InstantPreview
 245e167b749c6a7e7db841e6b0d3d749 Assembly-CSharp.dll:GoogleVR.Beta.GvrBetaHeadset
 bf3913f0d6c694bf20e1d681c79a4993 Assembly-CSharp.dll:GoogleVR.HelloVR.ObjectController
-30253c358d6d78af18720d4968fb2bc1 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
+35a9693c388776aaf487636491a20f11 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 b47a1a04758f8c685528d70291d145e8 Assembly-CSharp.dll:.RotateCube
 e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GvrControllerTooltipsSimple
@@ -194,8 +192,9 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 0aefaa69b3866ee3ae66f07ddb7f44ad Assembly-CSharp.dll:GoogleVR.VideoDemo.VideoPlayerReference
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InstantPreviewHelper
 83e769eee07fc231384c812eedbb8224 Assembly-CSharp.dll:.PlayerManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Gvr.Internal.EmulatorManager
 3b760e6526e13f7504f59e210145899a Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
-451da74ac9e708504121f893ddf24d1c Assembly-CSharp.dll:.GvrReticlePointer
+77035de2f75c9d7a19377ef6002c9bd8 Assembly-CSharp.dll:.GvrReticlePointer
 507174d46dacbc5fe45e28485db5dd1e Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 89c433fef753b02de32958d7fe54cc06 Assembly-CSharp.dll:.GvrLaserVisual
@@ -204,7 +203,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GoogleVR.VideoDemo.VideoControlsManager
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 1a15a086b1c0337a64ec2bee2ef92299 Assembly-CSharp.dll:.GvrPointerGraphicRaycaster
-7e8e4cb171804c6e9c599867a5054943 Assembly-CSharp.dll:.PlayerScript
+3839b2b337520e899561325655d747c5 Assembly-CSharp.dll:.PlayerScript
 df64ad7cdad89053ed97218d03e92c1f Assembly-CSharp.dll:Gvr.Internal.EmulatorConfig
 0356cdaae5b7070b3af7fac5f6f8d8cb Assembly-CSharp.dll:.GvrTooltip
 12d597f55904a0e1480e1e25a07f583c Assembly-CSharp.dll:GoogleVR.KeyboardDemo.KeyboardDelegateExample
@@ -212,6 +211,7 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 f0077b931a26a7eeaf5e245c7ef51ec4 Assembly-CSharp.dll:.GvrPointerInputModule
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Gvr.Internal.EmulatorClientSocket
 7a6837fe2e1bc65ba24bcd2a74cc367f Assembly-CSharp.dll:.GvrControllerInput
 9272257521fa59e2ad14f35e96c918e2 Assembly-CSharp.dll:GoogleVR.HelloVR.HelloVRManager
 01bdf339a887de280d38eeb519dfda0d Assembly-CSharp.dll:.GvrControllerReticleVisual

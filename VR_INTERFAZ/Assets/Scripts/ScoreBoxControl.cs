@@ -21,13 +21,11 @@ public class ScoreBoxControl : MonoBehaviour
     {
         bool isVisible = Camera.main.IsObjectVisible(gameObject.GetComponents<Renderer>());
 
-        if (!isVisible)
-        {
             storePosition = cameraPos.position + cameraPos.forward * distance;
             storePosition.y = Mathf.Clamp(storePosition.y + 1.0f, 0.1f, 50f);
             //storePosition.z = storePosition.z + 0.2f;
-            storePosition.x = storePosition.x + 0.2f;
-        }
+            storePosition.x = storePosition.x + 0.70f;
+        
 
         MoveToPosition();
     }

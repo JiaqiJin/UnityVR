@@ -24,7 +24,7 @@ public class EnemySpawn : MonoBehaviour
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         player_ = GameObject.Find("Player/TriggerSensor").GetComponent<PlayerScript>();
-        spawnpoint = GameObject.Find("SpwainPoint").transform;
+        spawnpoint = GameObject.Find("SpawnPoint").transform;
         //playerController = GetComponent<PlayerController>().gameObject;
     }
 
@@ -62,7 +62,6 @@ public class EnemySpawn : MonoBehaviour
            
         
         //resta vida al jugador
-        //playerController.GetComponent<PlayerController>().health -= 10;
     }
 
     private void OnTriggerEnter(Collider other)

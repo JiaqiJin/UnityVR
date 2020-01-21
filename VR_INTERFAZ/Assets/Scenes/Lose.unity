@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -636,7 +636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restar
+  m_Text: Restart
 --- !u!222 &1172451994
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -886,11 +886,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2389289536108007421, guid: a7ea9b9e3f06fc84aa3ee70780a2d8a7,
-        type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
     - target: {fileID: 2389289536108007420, guid: a7ea9b9e3f06fc84aa3ee70780a2d8a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -946,6 +941,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2389289536108007421, guid: a7ea9b9e3f06fc84aa3ee70780a2d8a7,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ea9b9e3f06fc84aa3ee70780a2d8a7, type: 3}
 --- !u!1 &2076303385
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 2076303388}
   - component: {fileID: 2076303387}
   m_Layer: 5
-  m_Name: Win
+  m_Name: Lose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,7 +982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.05, y: -29.26}
+  m_AnchoredPosition: {x: 0, y: 33}
   m_SizeDelta: {x: 216.1, y: 88.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076303387

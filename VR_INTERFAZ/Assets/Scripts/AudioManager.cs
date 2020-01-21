@@ -11,11 +11,12 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         musicSource.clip = musicClip;
+        musicSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        musicSource.Play();
+        
     }
 }
