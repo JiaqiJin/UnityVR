@@ -22,21 +22,21 @@ El jugador debe apuntar mediante el "GvrReticlePointer" que es un puntero de ret
 
 En la escena del juegp se incluye diferentes tipos de objetos:
 
-- Enemigo(Mommy) : existe dos tipos de enemigo, el primer tipo se acerca al jugador si ha entrado en el campo de vision del objeto y el segundo tipo te persigue al jugador y va regenerando si lo destruye, es deicr, que es immortal.
+- Enemigo(Momia) : Existen dos tipos de enemigos, el primer tipo se acerca al jugador si ha entrado en el campo de vision del objeto y el segundo tipo te persigue al jugador y va reapareciendo si es destruido, es deicr, es immortal.
 
 - Monedas: el jugador debe coleccionar monedas en la escena para poder desbloquer el camino a la Torre.
 
 - Teletransportador : superficie en el cual el jugador puede moverse en él.
 
-Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del jugador es inferior que cero pierde la partida y deberia empezar de nuevo aventura para llegar al Torre.
+Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del jugador es inferior o igual a cero pierde la partida y deberia empezar de nuevo aventura para llegar al Torre.
 
 ## Hitos de programación logrados relacionándolos con los contenidos que se han impartido
-- Hemos logrado el la utilizacion y aprendizaje del SDK CardBoard para poder realizar la practica de VR en Unity.
+- Hemos logrado la utilizacion y aprendizaje del SDK CardBoard para poder realizar la practica de VR en Unity.
 - Comprender diferentes tipos de collisiones(Trigger o Collision).
 - Realizacón de la interfaz en Unity conociendo diferentes tipos de objetos y como incluir diferentes tipos de objetos en la escena
 - Conocer la parte física del Unity(rigidbody) y sus usos.
 - Diferentes tipos de movimientos(Traslaciones, rotaciones...).
-- Saber diferentes tipos de envento y como agregar a los objetos de la escena.
+- Comprender diferentes tipos de envento y como agregar a los objetos de la escena.
 - Utilización de Raycast.
 - Cambios de escenas y incorporación de elementos audiovisual.
 - Entorno de UI y sus principlaes usos.
