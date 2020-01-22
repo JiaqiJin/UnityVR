@@ -8,7 +8,7 @@
 
 Con la introducción de dispositivos Google Cardboard, están surgiendo experiencias inmersivas de realidad virtual para su uso generalizado.Estas experiencias se caracterizan por el sentido de presencia que crean, colocando a los usuraios en un entornos imaginarios, históricos, representativos e imposibles.
 
-Las experiencias basadas en VR de este juego se centra en una interacción continue entre el jugador y el entorno en el que se situa.El juego utiliza el SDK CardBoard, que est diseñado para poder jugar con el movil de Android o Apple.
+Las experiencias basadas en VR de este juego se centra en una interacción continue entre el jugador y el entorno en el que se situa.El juego utiliza el SDK CardBoard, que esta diseñado para poder jugar con el movil de Android.
 
 - Dispositivo Android con Android 5.0 "Lollipop" (API nivel 21) o superior.
 - Android Studio versión 3.4.1 o superior
