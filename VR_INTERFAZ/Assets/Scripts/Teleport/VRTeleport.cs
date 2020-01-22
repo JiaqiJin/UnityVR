@@ -8,11 +8,11 @@ public class VRTeleport : MonoBehaviour
 {
     public Image imageCircle;
 
-    public float totalTime = 1;
+    public float totalTime = 0.7f;
     bool gvrStatus;
     float gvrTimer;
 
-    public int distanceOfRay = 15;
+    public int distanceOfRay = 20;
     private RaycastHit hit_;
 
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class VRTeleport : MonoBehaviour
         {
             gvrTimer += Time.deltaTime;
             imageCircle.fillAmount = gvrTimer / totalTime;
-        }
+        } 
 
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0f));
 

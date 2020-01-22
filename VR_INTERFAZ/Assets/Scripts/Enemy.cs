@@ -8,16 +8,23 @@ public class Enemy : MonoBehaviour
 {
     public float lookRadius = 10.0f;
     public int health;
-    //public GameObject playerhealth;
-    Transform target;
-    NavMeshAgent agent;
-    private PlayerScript player_;
-    int count = 0;
+
+    protected Transform target;
+    protected NavMeshAgent agent;
+    protected PlayerScript player_;
+
+    public float wanderRadius = 5;
+    public float wanderTimer = 3f;
+
+    protected float timer = 0;
+    public bool attack = false;
+    public int maxHealth = 120;
+
     // Start is called before the first frame update
     void Start()
     {
         player_ = GameObject.Find("Player/TriggerSensor").GetComponent<PlayerScript>();
-        health = 120;
+        health = maxHealth;
         //GameObject
         //agen
         target = PlayerManager.instance.player.transform;
@@ -30,7 +37,7 @@ public class Enemy : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if(distance <= lookRadius)
+        if(distance <= lookRadius || attack)
         {
             agent.SetDestination(target.position);
 
@@ -40,18 +47,48 @@ public class Enemy : MonoBehaviour
                 facceTarget();
             }
         }
+        else
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= wanderTimer)
+            {
+                Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+                agent.SetDestination(newPos);
+                timer = 0;
+            }
+        }
 
         //scoreText.text = count.ToString();
     }
 
-    void facceTarget()
+    public void setAttack(bool input)
+    {
+        attack = input;
+    }
+
+    public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
+    {
+        Vector3 randDirection = Random.insideUnitSphere * dist;
+
+        randDirection += origin;
+
+        NavMeshHit navHit;
+
+        NavMesh.SamplePosition(randDirection, out navHit, dist, layermask);
+
+        return navHit.position;
+    }
+
+
+   protected void facceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Player")
@@ -64,7 +101,7 @@ public class Enemy : MonoBehaviour
         //playerController.GetComponent<PlayerController>().health -= 10;
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player" )
         {
@@ -74,6 +111,7 @@ public class Enemy : MonoBehaviour
 
         else if( other.tag == "FireBall")
         {
+            attack = true;
             health -= 40;
             if(health < 0)
             {
@@ -84,7 +122,7 @@ public class Enemy : MonoBehaviour
            
     }
 
-    private void OnDrawGizmos()
+    protected void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);

@@ -17,13 +17,7 @@ public class PlayerScript : MonoBehaviour
     public Text scoreText;
     public Text pointsText;
     public bool control;
-   /* public int getScore
-    {
-        get
-        {
-            return score;
-        }
-    }*/
+    public Text finalText;
 
     public void SumScore()
     {
@@ -59,7 +53,26 @@ public class PlayerScript : MonoBehaviour
         if (score >= scoreObjetive && point >= pointsObjetive)
         {
             dis.GetComponent<DisableTeleport>().EnablePortal(true);
-           
+            finalText.enabled = false;
+
+        }
+        else
+        {
+
+            int puntos = scoreObjetive - score;
+            int monedas = pointsObjetive - point;
+
+            if (puntos > 0 && monedas > 0)
+            {
+                finalText.text = "Faltan " + (puntos).ToString() + " puntos y " + (monedas).ToString() + " monedas";
+            }else if(puntos <= 0)
+            {
+                finalText.text = "Faltan "+ monedas.ToString() + " monedas";
+            }
+            else if (monedas <= 0)
+            {
+                finalText.text = "Faltan "+ (puntos).ToString() + " puntos";
+            }
         }
 
         if(health <= 0)
@@ -71,7 +84,7 @@ public class PlayerScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Coin")
-        point+=1;
+            point+=1;
 
         if (other.tag == "Coins")
             point += 5;
