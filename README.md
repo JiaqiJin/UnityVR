@@ -22,7 +22,7 @@ El jugador debe apuntar mediante el "GvrReticlePointer" que es un puntero de ret
 
 En la escena del juegp se incluye diferentes tipos de objetos:
 
-- Enemigo(Momia) : Existen dos tipos de enemigos, el primer tipo se acerca al jugador si ha entrado en el campo de vision del objeto y el segundo tipo te persigue al jugador y va reapareciendo si es destruido, es deicr, es immortal.
+- Enemigo(Momia) : Existen dos tipos de enemigos, el primer tipo se acerca al jugador si ha entrado en el campo de vision del objeto y el segundo tipo va persiguiendo al jugador cuando entra contacto con la portal mágica que hemos puesto en el camino y va reapareciendo si es destruido, es deicr, es immortal.
 
 - Monedas: el jugador debe coleccionar monedas en la escena para poder desbloquer el camino a la Torre.
 
