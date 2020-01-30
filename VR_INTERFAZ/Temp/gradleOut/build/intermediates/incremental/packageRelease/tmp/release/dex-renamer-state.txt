@@ -1,0 +1,4 @@
+#Thu Jan 30 18:31:00 GMT 2020
+base.0=C\:\\Users\\folla\\Documents\\GitHub\\Unity\\UnityVR\\VR_INTERFAZ\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
