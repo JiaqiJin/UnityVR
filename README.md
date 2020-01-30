@@ -52,17 +52,17 @@ Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del j
 
 - Menu : 
 
-![sponza](https://github.com/samjxxxx/UnityVR/blob/master/Gif/gifMenu.gif)
+![sponza](Gif/gifMenu.gif)
 
 
 - Inicio/Gameplay: 
 
-![sponza](https://github.com/samjxxxx/UnityVR/blob/master/gifInicio.gif)
+![sponza](Gif/gifInicio.gif)
 
 
 - Final : 
 
-![sponza](https://github.com/samjxxxx/UnityVR/blob/master/gifFinal.gif)
+![sponza](Gif/gifFinal.gif)
 
 
 ## Acta de los acuerdos del grupo respecto al trabajo en equipo
