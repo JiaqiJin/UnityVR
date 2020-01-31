@@ -1,3 +1,4 @@
+
 # UnityVR
 
 ## Cuestiones importantes para el uso
@@ -24,13 +25,13 @@ El jugador debe apuntar mediante el "GvrReticlePointer" que es un puntero de ret
 
 En la escena del juego se incluye diferentes tipos de objetos:
 
-- Enemigo(Momia) : Existen dos tipos de enemigos, el primer tipo se acerca al jugador si ha entrado en el campo de visión del objeto y el segundo tipo va persiguiendo al jugador cuando entra contacto con la portal mágica que hemos puesto en el camino y va reapareciendo si es destruido, es decir, es immortal.
+- Enemigo(Momia) : Existen dos tipos de enemigos, el primer tipo se acerca al jugador si ha entrado en el campo de visión del objeto y el segundo tipo va persiguiendo al jugador cuando entra contacto con la portal mágica que hemos puesto en el camino y va reapareciendo si es destruido, es decir, es inmortal.
 
-- Monedas: el jugador debe coleccionar monedas en la escena para poder desbloquer el camino a la Torre.
+- Monedas: el jugador debe coleccionar monedas en la escena para poder desbloquear el camino a la Torre.
 
 - Teletransportador : superficie en el cual el jugador puede moverse en él.
 
-Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del jugador es inferior o igual a cero pierde la partida y deberia empezar de nuevo aventura para llegar al Torre.
+Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del jugador es inferior o igual a cero pierde la partida y debería empezar de nuevo aventura para llegar al Torre.
 
 
 
@@ -57,7 +58,7 @@ Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del j
 
 ## Gif animado de ejecución
 
-- Menu : 
+- Menú : 
 
 ![sponza](Gif/gifMenu.gif)
 
@@ -73,12 +74,12 @@ Si el jugador entra contacto con el enemigo va perdiendo vida y si la vida del j
 
 
 ## Acta de los acuerdos del grupo respecto al trabajo en equipo
-Daniel Labena : Sistema de movimiento del personaje y disparo del personaje.
+Daniel Suárez Labena : Sistema de movimiento del personaje y disparo del personaje.
 
 Daniel Gonzalez Marrero : Realizar IA del juego.
 
 Jiaqi Jin: Extension para la cámara y diferentes tipos de sensores del jugador.
 
-Trabajo Grupal: Entorno del juego y planteaminto de la jugabilidad DEL JUEGO.
+Trabajo Grupal: Entorno del juego y planteamiento de la jugabilidad DEL JUEGO.
 
  
